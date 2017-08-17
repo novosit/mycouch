@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.1</TargetFramework>
-    <Version>0.0.0</Version>
+    <Version>5.0.1</Version>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <FileVersion>0.0.0.0</FileVersion>
     <Authors>danielwertheim</Authors>
@@ -20,6 +20,9 @@
     <PackageReleaseNotes>https://github.com/danielwertheim/mycouch/wiki/release-notes</PackageReleaseNotes>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <PackageIconUrl>https://raw.githubusercontent.com/danielwertheim/mycouch/master/resources/mycouch-nuget.png</PackageIconUrl>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>ProDoctivity.snk</AssemblyOriginatorKeyFile>
+    <PackageId>MyCouch.Signed</PackageId>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -28,7 +31,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Ensure.That" Version="5.0.0" />
+    <PackageReference Include="Ensure.That.Signed" Version="5.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="10.0.2" />
     <PackageReference Include="System.Reflection.Emit.Lightweight" Version="4.3.0" />
   </ItemGroup>
