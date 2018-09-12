@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFrameworks>net451;netstandard1.1;netstandard2.0</TargetFrameworks>
-    <Version>0.0.0</Version>
+    <Version>6.0.0</Version>
     <Authors>danielwertheim</Authors>
     <Company>danielwertheim</Company>
     <Product>MyCouch.CouchDB client</Product>
@@ -18,6 +18,10 @@
     <PackageReleaseNotes>https://github.com/danielwertheim/mycouch/wiki/release-notes</PackageReleaseNotes>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <PackageIconUrl>https://raw.githubusercontent.com/danielwertheim/mycouch/master/resources/mycouch-nuget.png</PackageIconUrl>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>ProDoctivity.snk</AssemblyOriginatorKeyFile>
+    <PackageId>MyCouch.Signed</PackageId>
+    <AssemblyName>MyCouch.Signed</AssemblyName>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
